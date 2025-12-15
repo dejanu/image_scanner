@@ -30,7 +30,7 @@ jobs:
             trivy image \
               --severity CRITICAL,HIGH \
               --format table \
-              "$image"; then
+              "$image"
               echo "✅ Scan completed for $image"
           done < images.txt
   
