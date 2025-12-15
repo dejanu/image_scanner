@@ -50,8 +50,9 @@ jobs:
              
              docker tag "$image" "$TARGET_IMAGE"
 
-             echo "Images status..."
-             docker images --format '{{.Repository}} and {{.Tag}}'
-           done < images.txt          
+           done < images.txt
+           
+           echo "Images status..."
+           docker images --format '{{.Repository}} and {{.Tag}}'
 
   
