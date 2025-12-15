@@ -53,6 +53,6 @@ jobs:
            done < images.txt
            
            echo "Images status..."
-           docker images --format '{{.Repository}} and {{.Tag}}'
+           docker images --format '{{.Repository}}:{{.Tag}}'
 
   
